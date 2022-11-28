@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/eu-favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/my.css">
+    <title>Portfolio - Willian</title>
+</head>
+<body>
+    <section>
+        <header>
+            <div class="header-images">
+                <img  class="header-image"src="img/mario-andando.gif" alt="willian martins"  id="mario-walk">
+                <img id="my-name" class="header-image" src="img/name.png" alt="willian martins"">
+                <img  class="header-image" src="img/star-.png" alt="star" id="star">
+            </div>
+        </header>
+        <main>
+            <div class="my-photo"></div>
+            <p id="description" class="text">
+                Olá! Me chamo Willian Martins. <br>
+                Navegue no meu portfólio para saber mais sobre mim &#128512
+            </p>
+        </main>
+
+        <!-- Sobre -->
+        <article>
+            <div class="about-title">
+                <h2 class="title">Sobre</h2>
+            </div>
+            <div class="about-body">
+                <div class="about-image-content about">
+                    <img src="img/mario-andando-sem-capa.gif" alt="Mario" class="about-image">
+                </div>
+                <div class="about-text-content about">
+                    <p class="free-text">
+                        Sou estudante de Análise e Desenvolvimento de Sistemas na <a target="_blank" href="http://fatecsorocaba.edu.br/">Fatec Sorocaba</a>. <br><br>
+                        Meu objetivo é mergulhar cada vez mais no fantástico mundo do desenvolvimento de software com foco em desenvolvimento para Web. <br><br>
+                        Atualmente estou em um estágio 100% remoto em desenvolvimento front-end na <a target="_blank" href="https://helpper.com.br/">Helpper</a>, uma software house da cidade de Sorocaba - SP.
+                    </p>
+                </div>
+            </div>
+        </article>
+        <article id="know">
+          <div class="title know-title">
+              <h2>Conhecimentos</h2>
+              <p class="free-text">
+                Um demonstrativo dos meus conhecimentos atuais em algumas tecnologias.
+              </p>
+          </div>
+          <div class="skill"> 
+              <ul class="skill-bars">
+                <li>
+                  <strong>C++</strong>
+                  <div class="progress percent45"><span>45%</span></div>
+                </li>
+                <li>
+                  <strong>HTML</strong>
+                  <div class="progress percent50"><span>50%</span></div>
+                </li>
+                <li>
+                  <strong>CSS</strong>
+                  <div class="progress percent30"><span>30%</span></div>
+                </li>
+                <li>
+                  <strong>Javascript</strong>
+                  <div class="progress percent40"><span>40%</span></div>
+                </li>
+                <li>
+                  <strong>Typescript</strong>
+                  <div class="progress percent40"><span>40%</span></div>
+                </li>
+                <li>
+                  <strong>Oracle SQL</strong>
+                  <div class="progress percent20"><span>20%</span></div>
+                </li>
+              </ul>
+          </div>
+        </article>
+    <article id="contact">
+      <div>
+        <h2 class="title contact-title">Contato</h2>
+        <p class="free-text">
+          Entre em contato pelo formulário abaixo:
+        </p>
+        <form name="pesquisa" id="pesquisa" onsubmit="">
+          <p>
+            <label for="lblNome">Nome<br></label>
+            <input type="text" name="txtNome" id="txtNome">
+          </p>
+          <p>
+            <label for="lblEmail">Email<br></label>
+            <input type="txtEmail" name="txtEmail" id="txtEmail">
+          </p>
+          <p>
+            <label for="lblComentario">Texto<br></label>
+            <textarea name="txtComentario" id="txtComentario" cols="30" rows="10"></textarea>
+          </p>
+          <button name="Submit" form="pesquisa" type="submit">Enviar</button>
+          <input name="Reset" type="reset" form="pesquisa" value="Limpar">
+        </form>
+        <p class="free-text">
+          Ou através do e-mail: <br>
+          <a href="mailto:willian.martins3@fatec.sp.gov.br">willian.martins3@fatec.sp.gov.br</a>
+        </p>
+      </div>
+    </article>
+  </section>
+  <footer>
+    <div>
+      <strong><p>Willian Martins</p></strong>
+      <strong><p>&#169; Todos os Diretos Reservados</p></strong>
+    </div>
+  </footer>  
+</body>
+</html>
+
+<!-- 
+
+
+  <div class="social-media">
+          <ul id="ul-media">
+            <li id="git-icon">
+              <a href="https://github.com/WilMartins258" target="_blank" title="GitHub">
+                <svg class="icon-social" viewbox="0 0 16 16">
+                  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+                </svg>
+              </a>
+            </li>
+            <li id="in-icon">
+              <a href="https://www.linkedin.com/in/willian-martins-7b6b73167/" target="_blank" title="LinkedIn">
+                <svg class="icon-social" viewbox="0 0 16 16">
+                  <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+      </div>
+ -->
